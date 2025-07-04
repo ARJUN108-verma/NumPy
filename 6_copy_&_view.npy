@@ -1,0 +1,18 @@
+import numpy as np
+
+# Original array
+original = np.array([10, 20, 30, 40])
+
+# Create a view (shallow copy)
+view_array = original.view()
+
+# Create a copy (deep copy)
+copy_array = original.copy()
+
+# Modify the original array
+original[0] = 99
+
+# Print all arrays
+print("Original Array:", original)
+print("View Array     :", view_array)   # Will reflect the change
+print("Copy Array     :", copy_array)   # Will NOT reflect the change
