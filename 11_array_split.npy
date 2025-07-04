@@ -1,0 +1,17 @@
+import numpy as np
+
+# Create a 1D array
+arr = np.array([10, 20, 30, 40, 50, 60])
+
+print("Original Array:")
+print(arr)
+
+# Split the array into 3 equal parts
+split_equal = np.split(arr, 3)
+print("\nSplit into 3 equal parts:")
+print(split_equal)
+
+# Use array_split to split into unequal parts (e.g., 4 parts)
+split_unequal = np.array_split(arr, 4)
+print("\nSplit into 4 unequal parts:")
+print(split_unequal)
