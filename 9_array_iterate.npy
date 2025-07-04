@@ -1,0 +1,25 @@
+import numpy as np
+
+# Create a 2D NumPy array
+arr = np.array([[10, 20, 30],
+                [40, 50, 60]])
+
+print("Original Array:")
+print(arr)
+
+# Method 1: Iterate row-wise
+print("\nRow-wise iteration:")
+for row in arr:
+    print(row)
+
+# Method 2: Iterate element-wise using nested loops
+print("\nElement-wise iteration (nested loop):")
+for row in arr:
+    for element in row:
+        print(element, end=' ')
+    print()
+
+# Method 3: Flat iteration using .flat
+print("\nElement-wise iteration using .flat:")
+for element in arr.flat:
+    print(element, end=' ')
