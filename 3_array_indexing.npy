@@ -1,0 +1,23 @@
+import numpy as np
+
+# Create a 1D NumPy array
+arr = np.array([10, 20, 30, 40, 50])
+
+print("Original Array:", arr)
+
+# Indexing individual elements
+print("Element at index 0:", arr[0])
+print("Element at index 2:", arr[2])
+print("Last element (negative index):", arr[-1])
+
+# Create a 2D NumPy array
+arr2d = np.array([[1, 2, 3], [4, 5, 6]])
+
+print("\n2D Array:")
+print(arr2d)
+
+# Indexing in 2D
+print("Element at row 0, col 1:", arr2d[0][1])
+print("Element at row 1, col 2:", arr2d[1, 2])
+print("First row:", arr2d[0])
+print("Second column:", arr2d[:, 1])
