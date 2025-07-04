@@ -1,0 +1,13 @@
+import numpy as np
+
+# Create a NumPy array
+arr = np.array([12, 5, 3, 18, 7])
+
+# Display original array
+print("Original Array:", arr)
+
+# Sort the array
+sorted_arr = np.sort(arr)
+
+# Display sorted array
+print("Sorted Array:", sorted_arr)
