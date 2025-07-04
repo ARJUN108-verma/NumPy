@@ -1,0 +1,16 @@
+import numpy as np
+
+# Create a NumPy array
+arr = np.array([10, 20, 30, 40, 50, 60])
+
+# Element to search
+search_element = 40
+
+# Use np.where() to find the index
+result = np.where(arr == search_element)
+
+# Check if the element exists
+if result[0].size > 0:
+    print(f"Element {search_element} found at index: {result[0][0]}")
+else:
+    print(f"Element {search_element} not found in array.")
