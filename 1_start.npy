@@ -1,0 +1,5 @@
+#install numpy
+!pip install numpy
+
+#import
+import numpy as np
