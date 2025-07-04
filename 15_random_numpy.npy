@@ -1,0 +1,22 @@
+import numpy as np
+
+# Generate a single random float between 0 and 1
+random_float = np.random.rand()
+print("Random Float (0 to 1):", random_float)
+
+# Generate an array of 5 random floats between 0 and 1
+random_array = np.random.rand(5)
+print("Array of 5 Random Floats (0 to 1):", random_array)
+
+# Generate a 2x3 matrix of random integers between 10 and 50
+random_integers = np.random.randint(10, 50, size=(2, 3))
+print("2x3 Matrix of Random Integers (10 to 50):\n", random_integers)
+
+# Generate random numbers from a normal distribution (mean=0, std=1)
+normal_dist = np.random.randn(3, 2)
+print("3x2 Matrix from Normal Distribution:\n", normal_dist)
+
+# Shuffle a NumPy array
+arr = np.array([1, 2, 3, 4, 5])
+np.random.shuffle(arr)
+print("Shuffled Array:", arr)
