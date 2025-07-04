@@ -1,0 +1,15 @@
+import numpy as np
+
+# Create an array
+arr = np.array([10, 15, 20, 25, 30, 35, 40])
+
+# Create a boolean mask where condition is True for even numbers
+filter_mask = arr % 2 == 0
+
+# Apply the mask to filter the array
+filtered_array = arr[filter_mask]
+
+# Display the results
+print("Original array:", arr)
+print("Filter mask:", filter_mask)
+print("Filtered array (even numbers):", filtered_array)
