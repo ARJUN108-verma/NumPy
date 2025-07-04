@@ -1,137 +1,31 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyNe6nSR/vTcIvqIDJ++/BC4",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/ARJUN108-verma/NumPy/blob/main/2_creating_array.npy\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": 1,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "UGuNIyKFXU1g",
-        "outputId": "b2fdeaeb-600b-4138-b917-7631f84cca6b"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Requirement already satisfied: numpy in /usr/local/lib/python3.11/dist-packages (2.0.2)\n"
-          ]
-        }
-      ],
-      "source": [
-        "!pip install numpy"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "import numpy as np"
-      ],
-      "metadata": {
-        "id": "_MDkEpT5XddC"
-      },
-      "execution_count": 2,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "# 1. Create a 1D array\n",
-        "array_1d = np.array([10, 20, 30, 40, 50])\n",
-        "print(\"1D Array:\")\n",
-        "print(array_1d)\n",
-        "\n",
-        "# 2. Create a 2D array\n",
-        "array_2d = np.array([[1, 2, 3], [4, 5, 6]])\n",
-        "print(\"\\n2D Array:\")\n",
-        "print(array_2d)\n",
-        "\n",
-        "# 3. Create an array of zeros\n",
-        "zeros_array = np.zeros((2, 3))\n",
-        "print(\"\\nArray of Zeros:\")\n",
-        "print(zeros_array)\n",
-        "\n",
-        "# 4. Create an array of ones\n",
-        "ones_array = np.ones((3, 2))\n",
-        "print(\"\\nArray of Ones:\")\n",
-        "print(ones_array)\n",
-        "\n",
-        "# 5. Create an array with a range of values\n",
-        "range_array = np.arange(0, 10, 2)\n",
-        "print(\"\\nArray with range 0 to 10 with step 2:\")\n",
-        "print(range_array)\n",
-        "\n",
-        "# 6. Create an identity matrix\n",
-        "identity_matrix = np.eye(3)\n",
-        "print(\"\\nIdentity Matrix (3x3):\")\n",
-        "print(identity_matrix)\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "C7jtowHBXiTZ",
-        "outputId": "49d70289-9203-417d-dfb2-609e734438aa"
-      },
-      "execution_count": 3,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "1D Array:\n",
-            "[10 20 30 40 50]\n",
-            "\n",
-            "2D Array:\n",
-            "[[1 2 3]\n",
-            " [4 5 6]]\n",
-            "\n",
-            "Array of Zeros:\n",
-            "[[0. 0. 0.]\n",
-            " [0. 0. 0.]]\n",
-            "\n",
-            "Array of Ones:\n",
-            "[[1. 1.]\n",
-            " [1. 1.]\n",
-            " [1. 1.]]\n",
-            "\n",
-            "Array with range 0 to 10 with step 2:\n",
-            "[0 2 4 6 8]\n",
-            "\n",
-            "Identity Matrix (3x3):\n",
-            "[[1. 0. 0.]\n",
-            " [0. 1. 0.]\n",
-            " [0. 0. 1.]]\n"
-          ]
-        }
-      ]
-    }
-  ]
-}
+import numpy as np
+
+# 1. Create a 1D array
+array_1d = np.array([10, 20, 30, 40, 50])
+print("1D Array:")
+print(array_1d)
+
+# 2. Create a 2D array
+array_2d = np.array([[1, 2, 3], [4, 5, 6]])
+print("\n2D Array:")
+print(array_2d)
+
+# 3. Create an array of zeros
+zeros_array = np.zeros((2, 3))
+print("\nArray of Zeros:")
+print(zeros_array)
+
+# 4. Create an array of ones
+ones_array = np.ones((3, 2))
+print("\nArray of Ones:")
+print(ones_array)
+
+# 5. Create an array with a range of values
+range_array = np.arange(0, 10, 2)
+print("\nArray with range 0 to 10 with step 2:")
+print(range_array)
+
+# 6. Create an identity matrix
+identity_matrix = np.eye(3)
+print("\nIdentity Matrix (3x3):")
+print(identity_matrix)
