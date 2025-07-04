@@ -1,0 +1,29 @@
+import numpy as np
+
+# Creating two arrays
+a = np.array([1, 2, 3, 4])
+b = np.array([5, 6, 7, 8])
+
+print("Array a:", a)
+print("Array b:", b)
+
+# Using NumPy ufuncs
+print("\n--- NumPy ufuncs ---")
+
+# Element-wise addition
+print("np.add(a, b):", np.add(a, b))
+
+# Element-wise subtraction
+print("np.subtract(a, b):", np.subtract(a, b))
+
+# Element-wise multiplication
+print("np.multiply(a, b):", np.multiply(a, b))
+
+# Element-wise division
+print("np.divide(a, b):", np.divide(a, b))
+
+# Square root (only on one array)
+print("np.sqrt(a):", np.sqrt(a))
+
+# Sine (in radians)
+print("np.sin(a):", np.sin(a))
