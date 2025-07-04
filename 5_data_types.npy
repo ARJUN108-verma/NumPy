@@ -1,0 +1,26 @@
+import numpy as np
+
+# Integer array
+int_array = np.array([1, 2, 3, 4])
+print("Integer Array:", int_array)
+print("Data type:", int_array.dtype)
+
+# Float array
+float_array = np.array([1.5, 2.5, 3.5])
+print("\nFloat Array:", float_array)
+print("Data type:", float_array.dtype)
+
+# Complex array
+complex_array = np.array([1 + 2j, 3 + 4j])
+print("\nComplex Array:", complex_array)
+print("Data type:", complex_array.dtype)
+
+# Boolean array
+bool_array = np.array([True, False, True])
+print("\nBoolean Array:", bool_array)
+print("Data type:", bool_array.dtype)
+
+# String array
+string_array = np.array(['apple', 'banana', 'cherry'])
+print("\nString Array:", string_array)
+print("Data type:", string_array.dtype)
